@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import BirthdayCard from "./vnska.jsx";
-import AboutPage from "./about.jsx"; // example future page
+import BirthdayCard from "./pages/vnska.jsx";
+import AboutPage from "./pages/about.jsx"; // example future page
 
 export default function App() {
   return (
