@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import BirthdayCard from './pages/vnska'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import BirthdayCard from "./BirthdayCard.jsx";
+import AboutPage from "./AboutPage.jsx"; // example future page
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <BirthdayCard/>
-    </>
-  )
+    <Routes>
+      <Route path="/vnska" element={<BirthdayCard />} />
+      <Route path="/" element={<AboutPage />} />
+    </Routes>
+  );
 }
-
-export default App
